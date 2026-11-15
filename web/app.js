@@ -181,4 +181,5 @@ document.addEventListener('keydown',keyHandler);
 window.addEventListener('pagehide',stopTimer);
 applySettings();drawModes();drawPacks();setView('home');
 window.SOFA_DEBUG={state,MODES,PACKS}; // Exposed solely for local automated smoke tests.
+if ('serviceWorker' in navigator) window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js').catch(()=>{}));
 })();
