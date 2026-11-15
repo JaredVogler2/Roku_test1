@@ -1,0 +1,12 @@
+title=SofaSpark Party
+major_version=1
+minor_version=0
+build_version=00001
+ui_resolutions=fhd
+mm_icon_focus_fhd=pkg:/images/channel-icon-fhd.png
+mm_icon_focus_hd=pkg:/images/channel-icon-hd.png
+splash_screen_sd=pkg:/images/splash-sd.jpg
+splash_screen_hd=pkg:/images/splash-hd.jpg
+splash_screen_fhd=pkg:/images/splash-fhd.jpg
+splash_color=#0C1125
+splash_min_time=0
