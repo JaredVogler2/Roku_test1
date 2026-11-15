@@ -15,6 +15,14 @@
 
 Every mode has **Family Night, Friends Night, and Date Night** packs, each with 36 original prompts. All packs are included with a **single pay-to-install purchase**. Two team scores are available in every mode if your group wants to compete. The app shuffles each deck and displays every card before repeating.
 
+## Interactive HTML design prototype
+
+**Play now:** https://sofaspark-party-preview.vercel.app
+
+The `web/` folder contains a free, responsive browser version of all **432 original Roku game cards**, with keyboard/remote-style controls, four game modes, three audience packs, scoring, countdown timers and a **Design lab** for experimenting with palette, font size and mobile layout. It can also be installed as a browser app with offline support after the first visit.
+
+See [browser instructions](web/README.md). This is a **design prototype**, and the Roku SceneGraph UI still needs visual updates after design sign-off.
+
 ## Build and sideload
 
 ### Automated (easiest)
