@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b1123">
+  <meta name="description" content="SofaSpark Party — play 432 original family and party challenges directly in your browser.">
+  <title>SofaSpark Party • Interactive Prototype</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div class="ambient ambient-a" aria-hidden="true"></div><div class="ambient ambient-b" aria-hidden="true"></div>
+<div class="shell">
+<header class="topbar">
+  <a class="brand" href="./" aria-label="SofaSpark home"><span class="brand-mark">✳</span><span>SOFA<span class="brand-muted">SPARK</span><small>PARTY GAMES</small></span></a>
+  <div class="top-actions"><span class="version"><i></i> INTERACTIVE PROTOTYPE <span class="version-id">/ v0.2</span></span><button id="helpBtn" class="icon-btn" title="Controls" aria-label="Show game controls">?</button><button id="settingsBtn" class="top-cta">✦ <span>Design lab</span></button></div>
+</header>
+<main>
+  <section class="intro" aria-live="polite">
+    <div class="eyebrow" id="eyebrow"><span class="rule"></span> GAME NIGHT REINVENTED</div>
+    <div class="intro-head"><div><h1 id="pageTitle">Good times start<br><em>right here.</em></h1><p class="intro-copy" id="pageSubtitle">Four games. Three ways to play. One really good night.</p></div><div class="edition-pill"><span>✳</span> MADE FOR THE BIG SCREEN<br><strong>AND YOUR BROWSER</strong></div></div>
+  </section>
+  <section id="homeView" class="view">
+    <div class="section-heading"><h2>What are we playing?</h2><span>01 / SELECT A GAME</span></div>
+    <div class="mode-grid" id="modeGrid"></div>
+    <div class="home-bottom"><div class="info-chip"><span class="info-chip-icon">✦</span><span><strong>432 original prompts</strong><small>All yours, ready to play</small></span></div><div class="info-chip"><span class="info-chip-icon">♧</span><span><strong>3 unique game packs</strong><small>Family, friends, date night</small></span></div><div class="info-chip"><span class="info-chip-icon">⌁</span><span><strong>Works offline</strong><small>No accounts or downloads</small></span></div></div>
+  </section>
+  <section id="packsView" class="view hidden">
+    <div class="breadcrumb"><button class="back-link" id="backFromPacks">← ALL GAMES</button><span>/</span><span id="currentGameLabel">GAME</span></div>
+    <div class="section-heading"><h2>Who's in on the fun?</h2><span>02 / CHOOSE YOUR CROWD</span></div>
+    <div id="packGrid" class="pack-grid"></div>
+    <div class="tip"><span>✦</span> Every pack contains 36 original challenges. All included.</div>
+  </section>
+  <section id="playView" class="view hidden">
+    <div class="breadcrumb"><button class="back-link" id="backFromGame">← CHANGE PACK</button><span>/</span><span id="playModeLabel"></span><span>/</span><span id="playPackLabel"></span></div>
+    <div class="game-layout">
+      <div class="game-main">
+        <div class="prompt-card" id="promptCard">
+          <div class="prompt-top"><span id="challengeTag">✦ YOUR CHALLENGE</span><span id="cardCount">CARD 01 / 36</span></div>
+          <div class="prompt-body"><div class="prompt-symbol" id="promptSymbol">✳</div><h2 id="promptText">Let's play.</h2><p id="gameHint">Get ready for your challenge.</p></div>
+          <div class="prompt-bottom"><span id="sessionCount">001 CHALLENGES PLAYED</span><span>SOFASPARK <b>✳</b></span></div>
+        </div>
+        <div class="game-actions"><button id="prevBtn" class="action secondary">← Previous</button><button id="nextBtn" class="action primary">Next challenge <span>→</span></button></div>
+      </div>
+      <aside class="game-sidebar">
+        <div class="side-card timer-card"><div class="side-heading"><span>THE COUNTDOWN</span><span class="tiny-pink">● LIVE</span></div><div id="timerReadout" class="timer">01:00</div><p id="timerNote" class="side-muted">Take your time to read first.</p><div class="timer-buttons"><button id="timerToggle" class="timer-primary">▶ Start timer</button><button id="timerReset" class="timer-reset" title="Reset timer" aria-label="Reset timer">↻</button></div></div>
+        <div class="side-card score-card"><div class="side-heading"><span>KEEPING SCORE</span><button id="resetScores" class="text-button">RESET</button></div><div class="team"><span class="team-icon sun">☀</span><span class="team-name">Team Sun</span><button class="score-minus" data-team="0" aria-label="Remove Team Sun point">−</button><strong id="scoreA">0</strong><button class="score-plus" data-team="0" aria-label="Award Team Sun a point">+</button></div><div class="team"><span class="team-icon moon">☾</span><span class="team-name">Team Moon</span><button class="score-minus" data-team="1" aria-label="Remove Team Moon point">−</button><strong id="scoreB">0</strong><button class="score-plus" data-team="1" aria-label="Award Team Moon a point">+</button></div></div>
+        <div class="side-card shortcuts"><div class="side-heading">REMOTE-READY CONTROLS</div><p><kbd>→</kbd> Next card <kbd>←</kbd> Previous</p><p><kbd>Space</kbd> Play / pause <kbd>Esc</kbd> Back</p><p><kbd>↑</kbd> Sun +1 <kbd>↓</kbd> Moon +1</p></div>
+      </aside>
+    </div>
+  </section>
+</main>
+<footer><span>✳ SOFASPARK PARTY <span class="footer-muted">/ A LITTLE MORE FUN, TOGETHER.</span></span><span id="footerRight">DESIGNED FOR ROKU · TEST IN YOUR BROWSER</span></footer>
+</div>
+<dialog id="settingsDialog" class="modal"><div class="modal-head"><div><span class="modal-kicker">PREVIEW CONTROLS</span><h2>Make it your own<span class="hot">.</span></h2></div><button class="icon-btn close" data-close aria-label="Close">×</button></div><p>Explore visual directions before finalizing the Roku build. Changes stay in this browser only.</p><label class="field-label" for="palette">COLOR PALETTE</label><select id="palette"><option value="midnight">Midnight pop — purple / coral</option><option value="citrus">Citrus club — lime / mint</option><option value="ocean">Electric tide — blue / aqua</option></select><label class="field-label" for="scale">PROMPT TEXT SIZE <span id="scaleValue">100%</span></label><input id="scale" type="range" min="80" max="130" value="100" step="5"><label class="field-label">PREVIEW FORMAT</label><div class="seg"><button data-format="desktop" class="chosen">Desktop / TV</button><button data-format="mobile">Mobile / portrait</button></div><div class="modal-actions"><button id="resetSettings" class="action secondary">Reset design</button><button data-close class="action primary">Done ✓</button></div></dialog>
+<dialog id="helpDialog" class="modal"><div class="modal-head"><div><span class="modal-kicker">HOW TO PLAY</span><h2>One screen. Big laughs<span class="hot">.</span></h2></div><button data-close class="icon-btn close" aria-label="Close">×</button></div><p>Pick one of four games, choose Family Night, Friends Night or Date Night, then draw prompts. Use the on-screen buttons or your keyboard like a Roku remote.</p><div class="help-lines"><p><strong>← / →</strong> Select cards or move between challenges</p><p><strong>Enter</strong> Start selected game / next card</p><p><strong>Space</strong> Start or pause the timer</p><p><strong>↑ / ↓</strong> Give Sun / Moon a point</p><p><strong>Esc / Backspace</strong> Return to previous screen</p></div><button data-close class="action primary full">Got it →</button></dialog>
+<script src="./decks.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
