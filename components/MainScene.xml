@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component name="MainScene" extends="Scene">
+<script type="text/brightscript" uri="pkg:/source/decks.brs" />
+<script type="text/brightscript" uri="pkg:/components/MainScene.brs" />
+<children>
+<Rectangle id="background" translation="[0,0]" width="1920" height="1080" color="#0C1125FF" />
+<Rectangle id="topLine" translation="[0,0]" width="1920" height="9" color="#7C8BFFFF" />
+<Rectangle id="accentOne" translation="[1632,0]" width="288" height="1080" color="#111A34FF" />
+<Rectangle id="accentTwo" translation="[1702,0]" width="7" height="1080" color="#1B2849FF" />
+<Rectangle id="accentThree" translation="[1790,0]" width="7" height="1080" color="#1B2849FF" />
+<Label id="brand" translation="[96,52]" width="1200" height="82" font="font:LargeBoldSystemFont" text="SOFASPARK" color="#F8F9FFFF" horizAlign="left" vertAlign="center" wrap="false" />
+<Label id="tagline" translation="[101,129]" width="1250" height="46" font="font:MediumSystemFont" text="YOUR LIVING ROOM. YOUR GAME NIGHT." color="#9AA9C6FF" horizAlign="left" vertAlign="center" wrap="false" />
+<Label id="pageTitle" translation="[96,228]" width="1700" height="78" font="font:LargeBoldSystemFont" text="Pick your kind of fun" color="#F8F9FF" horizAlign="left" vertAlign="center" wrap="false" />
+<Label id="pageSubtitle" translation="[99,303]" width="1630" height="53" font="font:MediumSystemFont" text="Four games. One remote. Unlimited laughs." color="#ABB9D1FF" horizAlign="left" vertAlign="center" wrap="false" />
+<Group id="modesGroup">
+<Group id="modeCard0" translation="[96,410]">
+<Rectangle id="modeFrame0" translation="[0,0]" width="396" height="446" color="#29334DFF" />
+<Rectangle id="modeFill0" translation="[6,6]" width="384" height="434" color="#172340FF" />
+<Rectangle id="modeStripe0" translation="[25,28]" width="102" height="9" color="#F973A5FF" />
+<Label id="modeNum0" translation="[26,69]" width="345" height="48" font="font:MediumBoldSystemFont" text="01" color="#A9B8D1FF" horizAlign="left" vertAlign="center" wrap="false" />
+<Label id="modeName0" translation="[24,152]" width="345" height="110" font="font:LargeBoldSystemFont" text="ACT IT OUT" color="#F8F9FF" horizAlign="left" vertAlign="center" wrap="false" />
+<Label id="modeDescription0" translation="[26,315]" width="335" height="84" font="font:MediumSystemFont" text="Charades with a twist" color="#B6C4DDFF" horizAlign="left" vertAlign="center" wrap="true" />
+</Group>
+<Group id="modeCard1" translation="[529,410]">
+<Rectangle id="modeFrame1" translation="[0,0]" width="396" height="446" color="#29334DFF" />
+<Rectangle id="modeFill1" translation="[6,6]" width="384" height="434" color="#172340FF" />
+<Rectangle id="modeStripe1" translation="[25,28]" width="102" height="9" color="#7C8BFFFF" />
+<Label id="modeNum1" translation="[26,69]" width="345" height="48" font="font:MediumBoldSystemFont" text="02" color="#A9B8D1FF" horizAlign="left" vertAlign="center" wrap="false" />
+<Label id="modeName1" translation="[24,152]" width="345" height="110" font="font:LargeBoldSystemFont" text="PICK A SIDE" color="#F8F9FF" horizAlign="left" vertAlign="center" wrap="false" />
+<Label id="modeDescription1" translation="[26,315]" width="335" height="84" font="font:MediumSystemFont" text="Impossible choices" color="#B6C4DDFF" horizAlign="left" vertAlign="center" wrap="true" />
+</Group>
+<Group id="modeCard2" translation="[962,410]">
+<Rectangle id="modeFrame2" translation="[0,0]" width="396" height="446" color="#29334DFF" />
+<Rectangle id="modeFill2" translation="[6,6]" width="384" height="434" color="#172340FF" />
+<Rectangle id="modeStripe2" translation="[25,28]" width="102" height="9" color="#43D6B1FF" />
+<Label id="modeNum2" translation="[26,69]" width="345" height="48" font="font:MediumBoldSystemFont" text="03" color="#A9B8D1FF" horizAlign="left" vertAlign="center" wrap="false" />
+<Label id="modeName2" translation="[24,152]" width="345" height="110" font="font:LargeBoldSystemFont" text="BEAT THE CLOCK" color="#F8F9FF" horizAlign="left" vertAlign="center" wrap="false" />
+<Label id="modeDescription2" translation="[26,315]" width="335" height="84" font="font:MediumSystemFont" text="Fast-fire party dares" color="#B6C4DDFF" horizAlign="left" vertAlign="center" wrap="true" />
+</Group>
+<Group id="modeCard3" translation="[1395,410]">
+<Rectangle id="modeFrame3" translation="[0,0]" width="396" height="446" color="#29334DFF" />
+<Rectangle id="modeFill3" translation="[6,6]" width="384" height="434" color="#172340FF" />
+<Rectangle id="modeStripe3" translation="[25,28]" width="102" height="9" color="#F8C568FF" />
+<Label id="modeNum3" translation="[26,69]" width="345" height="48" font="font:MediumBoldSystemFont" text="04" color="#A9B8D1FF" horizAlign="left" vertAlign="center" wrap="false" />
+<Label id="modeName3" translation="[24,152]" width="345" height="110" font="font:LargeBoldSystemFont" text="STORY SPARK" color="#F8F9FF" horizAlign="left" vertAlign="center" wrap="false" />
+<Label id="modeDescription3" translation="[26,315]" width="335" height="84" font="font:MediumSystemFont" text="Make up something wild" color="#B6C4DDFF" horizAlign="left" vertAlign="center" wrap="true" />
+</Group>
+</Group><Group id="packsGroup" visible="false">
+<Group id="packCard0" translation="[222,410]">
+<Rectangle id="packFrame0" translation="[0,0]" width="470" height="432" color="#29334DFF" />
+<Rectangle id="packFill0" translation="[6,6]" width="458" height="420" color="#172340FF" />
+<Rectangle id="packStripe0" translation="[28,32]" width="124" height="9" color="#7C8BFFFF" />
+<Label id="packNum0" translation="[28,75]" width="410" height="45" font="font:MediumBoldSystemFont" text="PACK 01" color="#A9B8D1FF" horizAlign="left" vertAlign="center" wrap="false" />
+<Label id="packName0" translation="[28,165]" width="408" height="84" font="font:LargeBoldSystemFont" text="FAMILY NIGHT" color="#F8F9FF" horizAlign="left" vertAlign="center" wrap="false" />
+<Label id="packDesc0" translation="[28,315]" width="410" height="85" font="font:MediumSystemFont" text="All-ages playful adventures" color="#B6C4DDFF" horizAlign="left" vertAlign="center" wrap="true" />
+</Group>
+<Group id="packCard1" translation="[737,410]">
+<Rectangle id="packFrame1" translation="[0,0]" width="470" height="432" color="#29334DFF" />
+<Rectangle id="packFill1" translation="[6,6]" width="458" height="420" color="#172340FF" />
+<Rectangle id="packStripe1" translation="[28,32]" width="124" height="9" color="#43D6B1FF" />
+<Label id="packNum1" translation="[28,75]" width="410" height="45" font="font:MediumBoldSystemFont" text="PACK 02" color="#A9B8D1FF" horizAlign="left" vertAlign="center" wrap="false" />
+<Label id="packName1" translation="[28,165]" width="408" height="84" font="font:LargeBoldSystemFont" text="FRIENDS NIGHT" color="#F8F9FF" horizAlign="left" vertAlign="center" wrap="false" />
+<Label id="packDesc1" translation="[28,315]" width="410" height="85" font="font:MediumSystemFont" text="Surprises and big laughs" color="#B6C4DDFF" horizAlign="left" vertAlign="center" wrap="true" />
+</Group>
+<Group id="packCard2" translation="[1252,410]">
+<Rectangle id="packFrame2" translation="[0,0]" width="470" height="432" color="#29334DFF" />
+<Rectangle id="packFill2" translation="[6,6]" width="458" height="420" color="#172340FF" />
+<Rectangle id="packStripe2" translation="[28,32]" width="124" height="9" color="#F8C568FF" />
+<Label id="packNum2" translation="[28,75]" width="410" height="45" font="font:MediumBoldSystemFont" text="PACK 03" color="#A9B8D1FF" horizAlign="left" vertAlign="center" wrap="false" />
+<Label id="packName2" translation="[28,165]" width="408" height="84" font="font:LargeBoldSystemFont" text="DATE NIGHT" color="#F8F9FF" horizAlign="left" vertAlign="center" wrap="false" />
+<Label id="packDesc2" translation="[28,315]" width="410" height="85" font="font:MediumSystemFont" text="Fun questions for two" color="#B6C4DDFF" horizAlign="left" vertAlign="center" wrap="true" />
+</Group>
+</Group>
+<Group id="playGroup" visible="false">
+<Rectangle id="playFrame" translation="[106,376]" width="1708" height="400" color="#354564FF" />
+<Rectangle id="playFill" translation="[113,383]" width="1694" height="386" color="#172340FF" />
+<Rectangle id="playAccent" translation="[113,383]" width="1694" height="12" color="#43D6B1FF" />
+<Label id="turnLabel" translation="[161,406]" width="1550" height="65" font="font:MediumBoldSystemFont" text="YOUR CHALLENGE" color="#43D6B1FF" horizAlign="left" vertAlign="center" wrap="false" />
+<Label id="promptLabel" translation="[153,477]" width="1610" height="231" font="font:LargeBoldSystemFont" text="" color="#F8F9FFFF" horizAlign="center" vertAlign="center" wrap="true" />
+<Label id="counterLabel" translation="[125,806]" width="680" height="57" font="font:MediumBoldSystemFont" text="ROUND 1 / 30" color="#A9B8D1FF" horizAlign="left" vertAlign="center" wrap="false" />
+<Label id="timerLabel" translation="[1290,799]" width="495" height="70" font="font:LargeBoldSystemFont" text="00:45" color="#43D6B1FF" horizAlign="right" vertAlign="center" wrap="false" />
+<Label id="statsLabel" translation="[126,890]" width="1540" height="47" font="font:MediumSystemFont" text="" color="#A9B8D1FF" horizAlign="left" vertAlign="center" wrap="false" />
+</Group>
+<Label id="footerText" translation="[97,979]" width="1730" height="47" font="font:MediumSystemFont" text="LEFT/RIGHT - CHOOSE    OK - SELECT    BACK - EXIT" color="#ABB9D1FF" horizAlign="left" vertAlign="center" wrap="false" />
+<Timer id="secondTimer" duration="1" repeat="true" />
+</children>
+</component>
