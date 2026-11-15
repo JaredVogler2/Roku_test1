@@ -133,8 +133,9 @@ end sub
 
 sub showPrompt(isNew as Boolean)
     m.top.findNode("promptLabel").text = m.deck[m.order[m.round]]
-    m.top.findNode("counterLabel").text = "CARD " + (m.round + 1).ToStr() + " / " + m.deck.Count().ToStr()
-    m.top.findNode("turnLabel").text = "YOUR CHALLENGE  /  " + UCase(modeNames()[m.mode])
+    m.top.findNode("counterLabel").text = "CARD " + Str(m.round + 1).Trim() + " / " + Str(m.deck.Count()).Trim()
+    names = modeNames()
+    m.top.findNode("turnLabel").text = "YOUR CHALLENGE  /  " + UCase(names[m.mode])
     if isNew
         m.sessionRounds = m.sessionRounds + 1
         m.lifetimeRounds = m.lifetimeRounds + 1
