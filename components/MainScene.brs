@@ -117,7 +117,7 @@ sub startGame()
     packs = packNames()
     m.pageTitle.text = names[m.mode]
     m.pageSubtitle.text = packs[m.pack] + "   /   No phones needed   /   Pass the remote"
-    m.footerText.text = "OK / RIGHT  -  NEXT     LEFT  -  PREVIOUS     UP  -  SUN +1     DOWN  -  MOON +1     PLAY  -  PAUSE"
+    m.footerText.text = "OK / RIGHT  -  NEXT     LEFT  -  PREVIOUS     UP  -  SUN +1     DOWN  -  MOON +1     PLAY  -  START/PAUSE"
     showPrompt(true)
 end sub
 
@@ -176,8 +176,7 @@ end sub
 sub resetTimer()
     m.timer.control = "stop"
     m.secondsLeft = modeSeconds()
-    m.running = true
-    m.timer.control = "start"
+    m.running = false
     updateTimer()
 end sub
 
@@ -189,6 +188,9 @@ end sub
 sub toggleTimer()
     if m.secondsLeft = 0
         resetTimer()
+        m.running = true
+        m.timer.control = "start"
+        updateTimer()
     else if m.running
         stopTimer()
         updateTimer()
