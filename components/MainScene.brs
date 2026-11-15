@@ -25,6 +25,7 @@ sub init()
     end if
     showHome()
     m.top.setFocus(true)
+    m.top.signalBeacon("AppLaunchComplete")
 end sub
 
 function modeNames() as Object
